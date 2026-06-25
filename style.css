@@ -1,0 +1,64 @@
+/* ========================================
+   AGRO FORTE - Estilos Personalizados
+      ======================================== */
+
+      :root {
+          --primary-green: #22c55e;
+          }
+
+          body {
+              font-family: 'Inter', system-ui, sans-serif;
+              }
+
+              .title-font {
+                  font-family: 'Playfair Display', sans-serif;
+                  }
+
+                  /* Hero Background */
+                  .hero-bg {
+                      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), 
+                                            url('https://source.unsplash.com/random/2000x1200/?drone,farm,sustainable');
+                                                background-size: cover;
+                                                    background-position: center;
+                                                        background-attachment: fixed;
+                                                        }
+
+                                                        /* Section Title */
+                                                        .section-title {
+                                                            position: relative;
+                                                                display: inline-block;
+                                                                }
+
+                                                                .section-title:after {
+                                                                    content: '';
+                                                                        position: absolute;
+                                                                            width: 100px;
+                                                                                height: 4px;
+                                                                                    background: linear-gradient(to right, #22c55e, #86efac);
+                                                                                        bottom: -14px;
+                                                                                            left: 50%;
+                                                                                                transform: translateX(-50%);
+                                                                                                }
+
+                                                                                                /* Card Hover */
+                                                                                                .card-hover {
+                                                                                                    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                                    }
+
+                                                                                                    .card-hover:hover {
+                                                                                                        transform: translateY(-20px);
+                                                                                                            box-shadow: 0 35px 60px -15px rgb(0 0 0 / 0.5);
+                                                                                                            }
+
+                                                                                                            /* Calculator Styles */
+                                                                                                            #calculator-card input[type="range"] {
+                                                                                                                accent-color: #22c55e;
+                                                                                                                }
+
+                                                                                                                #calculator-card select {
+                                                                                                                    appearance: none;
+                                                                                                                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+                                                                                                                            background-position: right 1rem center;
+                                                                                                                                background-repeat: no-repeat;
+                                                                                                                                    background-size: 1.5em 1.5em;
+                                                                                                                                    }
